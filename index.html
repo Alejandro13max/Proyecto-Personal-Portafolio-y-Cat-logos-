@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOCITY KICKS | Zapatillas Deportivas</title>
+
+    <!-- Google Fonts: Montserrat & Bebas Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP BAR ================= -->
+    <div class="top-bar">
+        <div class="top-item"><i class="fa-solid fa-bolt"></i> Envíos a todo el país en 24h</div>
+        <div class="top-item">🔥 20% OFF en tu primera compra con el código: VELOCITY20</div>
+        <div class="top-item"><i class="fa-solid fa-shield-halved"></i> 100% Originales</div>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-shoe-prints"></i>
+                <div class="logo-text">
+                    <h1>VELOCITY</h1>
+                    <span>KICKS</span>
+                </div>
+            </div>
+
+            <button id="hamburger" class="hamburger" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="menu" class="menu">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#catalogo" class="filter-link" data-filter="todos">Catálogo</a></li>
+                <li><a href="#catalogo" class="filter-link" data-filter="running">Running</a></li>
+                <li><a href="#catalogo" class="filter-link" data-filter="basket">Básquet</a></li>
+                <li><a href="#catalogo" class="filter-link" data-filter="urbano">Urbano</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <button id="modoBtn" class="icon-btn" title="Cambiar modo">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="abrirModal" class="account-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Mi Cuenta</span>
+                </button>
+                <button class="icon-btn cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="subtitle">NUEVA COLECCIÓN 2025</span>
+                <h2>SUPERA TUS <br><span class="neon-text">LÍMITES</span></h2>
+                <p>Zapatillas diseñadas para la velocidad, el estilo y la máxima comodidad.</p>
+                <a href="#catalogo" class="hero-button">Ver Catálogo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Zapatilla Destacada">
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section class="benefits">
+        <div class="benefit">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div><h4>Envío Rápido</h4><p>A todo el país</p></div>
+        </div>
+        <div class="benefit">
+            <i class="fa-solid fa-rotate-left"></i>
+            <div><h4>Cambio Gratis</h4><p>Primeros 30 días</p></div>
+        </div>
+        <div class="benefit">
+            <i class="fa-solid fa-credit-card"></i>
+            <div><h4>Pago Seguro</h4><p>Tarjetas y QR</p></div>
+        </div>
+        <div class="benefit">
+            <i class="fa-solid fa-headset"></i>
+            <div><h4>Soporte 24/7</h4><p>Atención personalizada</p></div>
+        </div>
+    </section>
+
+    <!-- ================= CATÁLOGO CON FILTROS ================= -->
+    <section class="catalog-section" id="catalogo">
+        <div class="section-header">
+            <h2>ELIGE TU ESTILO</h2>
+            <p>Filtra por categoría para encontrar tu par perfecto</p>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="running">Running</button>
+            <button class="filter-btn" data-filter="basket">Básquet</button>
+            <button class="filter-btn" data-filter="urbano">Urbano</button>
+        </div>
+
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card" data-category="running">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Running Pro">
+                    <span class="badge new">Nuevo</span>
+                </div>
+                <div class="product-info">
+                    <h3>Velocity Runner X</h3>
+                    <p class="product-desc">Amortiguación máxima para largas distancias.</p>
+                    <div class="product-bottom">
+                        <span class="price">Bs. 450</span>
+                        <button class="add-cart-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="basket">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=500&q=80" alt="Basket High">
+                    <span class="badge hot">Top Ventas</span>
+                </div>
+                <div class="product-info">
+                    <h3>Air Dunk High</h3>
+                    <p class="product-desc">Soporte de tobillo y tracción para la cancha.</p>
+                    <div class="product-bottom">
+                        <span class="price">Bs. 620</span>
+                        <button class="add-cart-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="urbano">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=500&q=80" alt="Urban Style">
+                </div>
+                <div class="product-info">
+                    <h3>Street Legend</h3>
+                    <p class="product-desc">Estilo retro con comodidad moderna.</p>
+                    <div class="product-bottom">
+                        <span class="price">Bs. 380</span>
+                        <button class="add-cart-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="running">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?auto=format&fit=crop&w=500&q=80" alt="Speed Runner">
+                </div>
+                <div class="product-info">
+                    <h3>Speed Track Pro</h3>
+                    <p class="product-desc">Ligeras, diseñadas para romper récords.</p>
+                    <div class="product-bottom">
+                        <span class="price">Bs. 510</span>
+                        <button class="add-cart-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= REDES Y CONTACTO ================= -->
+    <section class="social-contact">
+        <div class="contact-info">
+            <h2>ÚNETE AL MOVIMIENTO</h2>
+            <p>Síguenos para lanzamientos exclusivos, sorteos y descuentos.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="contact-details">
+            <p><i class="fa-solid fa-location-dot"></i> Av. 6 de Agosto #123, La Paz</p>
+            <p><i class="fa-solid fa-phone"></i> +591 700 12345</p>
+            <p><i class="fa-solid fa-envelope"></i> hola@velocitykicks.com</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-shoe-prints"></i> VELOCITY KICKS
+            </div>
+            <p>&copy; 2025 Velocity Kicks. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL DE REGISTRO CON VALIDACIÓN ================= -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <h2>Crea tu cuenta VIP</h2>
+                <p>Accede a drops exclusivos y ofertas.</p>
+            </div>
+            <form id="registroForm">
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder="Nombre (solo letras)">
+                    <span class="error-msg" id="error-nombre">Solo letras.</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="apellido" placeholder="Apellido (solo letras)">
+                    <span class="error-msg" id="error-apellido">Solo letras.</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="ci" placeholder="CI (solo números)" maxlength="10">
+                    <span class="error-msg" id="error-ci">Solo números, 5-10 dígitos.</span>
+                </div>
+                <div class="form-group">
+                    <select id="ciudad">
+                        <option value="">Seleccione Ciudad</option>
+                        <option>La Paz</option>
+                        <option>Cochabamba</option>
+                        <option>Santa Cruz</option>
+                        <option>Oruro</option>
+                        <option>Potosí</option>
+                        <option>Tarija</option>
+                        <option>Chuquisaca</option>
+                        <option>Beni</option>
+                        <option>Pando</option>
+                    </select>
+                    <span class="error-msg" id="error-ciudad">Seleccione ciudad.</span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefono" placeholder="Teléfono (8 dígitos, empieza con 6 o 7)" maxlength="8">
+                    <span class="error-msg" id="error-telefono">8 dígitos, inicia con 6 o 7.</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="correo" placeholder="Correo electrónico">
+                    <span class="error-msg" id="error-correo">Correo inválido.</span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Contraseña (mín. 8, 1 mayúscula, 1 número)">
+                    <span class="error-msg" id="error-password">Mín. 8 caract, 1 mayúscula, 1 número.</span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirmar" placeholder="Confirmar contraseña">
+                    <span class="error-msg" id="error-confirmar">Las contraseñas no coinciden.</span>
+                </div>
+                <label class="terms">
+                    <input type="checkbox" id="terminos">
+                    Acepto los términos y condiciones
+                </label>
+                <span class="error-msg" id="error-terminos" style="margin-bottom: 10px;">Debe aceptar los términos.</span>
+                
+                <button type="submit" class="register-btn">Crear Cuenta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
